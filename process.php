@@ -13,6 +13,10 @@
     <title></title>
   </head>
   <body>
+    <h1>Länkar till andra sidor</h1>
+    <h2><a href="index.html">Index.html</h2>
+    <h2><a href="form.html">Form.html</h2>
+    <h2><a href="process.php">Process.php</h2>
 
   </body>
 </html>
