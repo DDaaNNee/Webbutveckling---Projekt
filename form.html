@@ -6,10 +6,21 @@
   </head>
   <body>
       <h1>Skriv in ditt namn</h1>
-      <form name="form1" method="get" action="index.html">
-        <input type="text" name="namn" value="Skriv ditt namn här">
-        <input type="submit">
+      <form name="form1" method="get" action="process.php" onsubmit="return kolla">
+        <input type="text" name="namn" value=""/>
+        <input type="submit"/>
 
+        <script>
+          function kolla(){
+            if(document.form1.namn.value == ""){
+              alert("Fyll i ditt namn!");
+            }
+            else{
+              document.form1.submit();
+            }
+          }
+
+        </script>
       </form>
   </body>
 </html>
