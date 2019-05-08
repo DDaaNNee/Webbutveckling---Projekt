@@ -1,23 +1,29 @@
+html{
+  background: url(Bilder/bg3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 body {
-  background-color: white;
+  background-color: 0;
   font: 15px arial, sans-serif;
 }
-h1{
 
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
-h3{
-  font: 15px arial, sans-serif;
-}
+
+/*
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
   position: fixed;
   top: 0;
   width:100%;
-  margin-left:-10px;
+  margin-left:-8px;
 }
 li{
   float: left;
@@ -28,9 +34,8 @@ li:last-child{
 }
 li a{
   display: block;
-  color:white;
-  text-align: center;
-  padding: 14px 16px;
+  color: white;
+  padding: 15px 20px;
   text-decoration: none;
 }
 li a:hover{
@@ -38,13 +43,16 @@ li a:hover{
 }
 li a.active{
   background-color: #2e3cdb;
-}
-/*.topnavigation {
+} */
+.topnavigation {
   font: 15px arial, sans-serif;
   background-color: #333;
   overflow: hidden;
   text-align: center;
   display: block;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .topnavigation a {
@@ -65,17 +73,12 @@ li a.active{
   background-color: #2e3cdb;
   text-decoration: underline;
   color: white;
-}*/
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+}
+
 .column {
   float: left;
   width: 31.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  padding: 1px;
+  margin-left: -9px;
+  margin-right: 20px;
 }
