@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Form</title>
+    <title>Registreringsformulär</title>
     <link rel="stylesheet" href="css.css">
   </head>
   <body>
@@ -13,16 +13,18 @@
     <a href="Process.php">Process (Bara PHP kod)</a>
   </div>
 
-      <h1>Skriv in ditt namn</h1>
-      <form name="form1" method="get" action="process.php" onsubmit="return kolla">
-        <input type="text" name="namn" value="">
-        <input type="submit">
-
-</form>
+      <h1>Registreringsformulär</h1> <!-- Ändra &#160; till något snyggare -->
+      <form name="form1" method="GET" action="form.html" onsubmit="return kolla()">
+        <h3>Förnamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="förnamn" value=""/></h3>
+        <h3>Efternamn: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="efternamn" value=""/></h3>
+        <h3>E-mail:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="email" value=""/></h3>
+        <h3>Telefonnummer:  &nbsp&nbsp<input type="text" name="mobilnummer" value=""/></h3>
+        <input type="submit" id="info"/>
+      </form>
         <script>
           function kolla(){
-            if(document.form1.namn.value == ""){
-              alert("Fyll i ditt namn!");
+            if(document.form1.förnamn.value == "" || document.form1.efternamn.value == "" || document.form1.email.value == "" || document.form1.mobilnummer.value == ""){
+              alert("Fyll i alla fält!");
             }
             else{
               document.form1.submit();

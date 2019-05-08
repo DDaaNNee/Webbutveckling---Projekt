@@ -5,6 +5,9 @@ body {
 h1{
 
 }
+h3{
+  font: 15px arial, sans-serif;
+}
 .topnavigation {
   font: 15px arial, sans-serif;
   background-color: #333;
